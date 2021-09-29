@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "811434302020",
+    "project_id": "flapp-92450",
+    "storage_bucket": "flapp-92450.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:811434302020:android:72eafdbb07ed5ad74cba11",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "811434302020-s8bfdi44o4mrktg7umsh2tnuamjg11p7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBFCvBqOqJueCr27fOW5TtseVaS_NEaPxo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "811434302020-s8bfdi44o4mrktg7umsh2tnuamjg11p7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
