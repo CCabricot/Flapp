@@ -10,6 +10,8 @@ import android.view.WindowManager;
 
 public class MenuActivity extends AppCompatActivity {
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,7 +27,7 @@ public class MenuActivity extends AppCompatActivity {
         startActivity(intent);
     }
     public void OnClick_Score(View view){
-        Intent intent = new Intent(this, ScoreActivity.class);
+        Intent intent = new Intent(this,ScoreActivity.class);
         startActivity(intent);
     }
 }
