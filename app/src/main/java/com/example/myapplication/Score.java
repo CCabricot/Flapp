@@ -13,6 +13,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
+import java.util.logging.Filter;
 
 public class Score implements Comparable<Score> {
 
@@ -43,7 +44,7 @@ public class Score implements Comparable<Score> {
 
     @Override
     public int compareTo(Score s) {
-        return getScore().compareTo(s.getScore());
+        return Integer.parseInt(getScore())-Integer.parseInt(s.getScore());
     }
 
 

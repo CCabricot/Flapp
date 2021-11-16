@@ -4,22 +4,27 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Filter;
 import android.widget.TextView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.firebase.firestore.FirebaseFirestore;
 
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
 
 
 public class ScoreAdaptater  extends
             RecyclerView.Adapter<ScoreAdaptater.ViewHolder> {
         // Store a member variable for the contacts
         private List<Score> scores;
+        private List<Score> scoreListFull;
 
 
         public ScoreAdaptater(List<Score> scores) {
             this.scores = scores ;
+            this.scoreListFull=new ArrayList<>(scores);
         }
 
         // Provide a direct reference to each of the views within a data item
@@ -76,4 +81,11 @@ public class ScoreAdaptater  extends
         public int getItemCount() {
             return scores.size();
         }
-    }
+
+        public void filterList(ArrayList<Score> filteredList) {
+            scores = filteredList;
+            notifyDataSetChanged();
+        }
+
+}
+
